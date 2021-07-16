@@ -74,7 +74,7 @@
 
             <!-- Concept-->
             <section class="section-concept">
-                <h2 hidden>Концепции подхода к работе</h2>
+                <h2 class="visually-hidden">Концепции подхода к работе</h2>
             <div class="container">
                 <ul class="concept-list list">
                     <li class="concept-list-item">
@@ -471,14 +471,28 @@
                             </svg>
                             </a>
                         </li>
-
                      </ul>
+                    </div>
+
+                    <div class="mailing">
+                        <h3 class="footer-title">Подпишитесь на рассылку</h3>
+                        <form action="#" class="footer-form">
+                            <label>
+                                <input type="email" class="footer-text-form" placeholder="E-mail" required>
+                            </label>
+                    
+                            <button type="submit" class="footer-form-btn">Подписаться
+                                <svg class="mail-icon" width="24" height="24">
+                                    <use href="/images/icons.svg#icon-icon-send"></use>
+                                </svg>
+                            </button>
+                        </form>
                     </div>
                 </div>
             </footer>
             
 
-            <div class="backdrop" data-modal>
+            <div class="backdrop is-hidden" data-modal>
                 <div class="modal">
                     <button data-modal-close type="button" class="close-button">
                         <svg class="close-icon" width="11" height="11">
@@ -528,8 +542,9 @@
                         </label>
 
 
-                    <input type="checkbox" class="modal-form-checkbox" id="accept-policy">
-                    <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю
+                    <input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
+                    <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;
+      
                         <a href="#" class="modal-form-label-link">Условия договора</a>
                     </label>
                     <button type="submit" class="modal-form-btn">Отправить</button>
@@ -538,6 +553,6 @@
                 </div>
             </div>
             
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     </body>
 </html>
